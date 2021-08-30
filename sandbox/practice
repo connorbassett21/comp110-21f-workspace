@@ -1,0 +1,9 @@
+"""ex01 Numerical Operators."""
+
+__author__ = "730397999"
+
+x: int = int(input("Left-Hand Variable "))
+
+y: int = int(input("Right-Hand Variable "))
+
+print(str(x) + str (y) + " is " + int(x ** y))
