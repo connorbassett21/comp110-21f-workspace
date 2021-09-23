@@ -121,6 +121,7 @@ def football() -> None:
 
 
 def quit() -> None:
+    """Allows the user to exit the program."""
     global points
     """Allows user to quit and see their chances of making it professionally. """
     print(f"Thanks for playing! {CAT_EMOJI}")
