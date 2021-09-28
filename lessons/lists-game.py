@@ -37,3 +37,4 @@ print(f"Total Score: {sum}")
 
 # # Access the last item of a list
 # print(rolls[len(rolls) - 1])
+# print(rolls[last_index])
