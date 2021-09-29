@@ -5,15 +5,18 @@ __author__ = "730397999"
 # TODO: Implement your functions here.
 
 
-def all(value: int, list_of_values: list[int]) -> bool:
+def all(list_of_integers: list[int], value: int) -> bool:
     """Prints yes if the input value is in the list; no if not."""
     i: int = 0
-    while i < len(list_of_values):
-        if value == list_of_values[i]:
-            i += 1
-        else:
-            return False
-    return True
+    if len(list_of_integers) == 0:
+        return False
+    else:
+        while i < len(list_of_integers):
+            if list_of_integers[i] == value:
+                i += 1
+            else:
+                return False
+        return True
 
 
 def is_equal(first_list: list[int], second_list: list[int]) -> bool:
@@ -44,6 +47,3 @@ def max(input: list[int]) -> int:
             else:
                 i += 1
         return maximum
-
-
-print(max([88, 9, 3]))
