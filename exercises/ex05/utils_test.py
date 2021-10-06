@@ -23,17 +23,17 @@ def test_only_evens_empty_list() -> None:
 
 def test_sub_normal() -> None:
     """Tests to see if the function works when both integers are within the index range."""
-    assert sub([5, 7, 2, 10, 3], 2, 4) == [2, 3]
+    assert sub([5, 7, 2, 10, 3], 1, 4) == [7, 2, 10]
 
 
 def test_sub_repeat() -> None:
     """Tests to see if the function works when all list values are 4."""
-    assert sub([4, 4, 4, 4, 4, 4], 2, 3) == [4, 4]
+    assert sub([4, 4, 4, 4, 4, 4], 1, 3) == [4, 4]
 
 
 def test_sub_out_of_range() -> None:
     """Tests to see if the function works when first integer is less than zero and second integer is greater than last index."""
-    assert sub([3, 4, 6, 7, 9, 3], -7, 15) == [3, 3]
+    assert sub([3, 4, 6, 7, 9, 3], -7, 15) == [3, 4, 6, 7, 9]
 
 
 def test_concat_positive() -> None:
