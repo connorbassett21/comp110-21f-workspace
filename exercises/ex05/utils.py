@@ -21,16 +21,16 @@ def only_evens(list_of_ints: list[int]) -> list[int]:
 def sub(a_list: list[int], first: int, second: int) -> list[int]:
     """Creates a subset of a list when given two integer values."""
     begin_number: int = first
-    end_number: int = (second)
+    end_number: int = second
     final_list: list[int] = list([])
+    if end_number > len(a_list):
+        end_number: int = len(a_list)
     if begin_number < 0:
         begin_number: int = 0
     if begin_number > len(a_list):
         return final_list
     if end_number < 0:
         return final_list
-    if end_number > len(a_list):
-        end_number: int = (len(a_list) - 1)
     if len(a_list) == 0:
         return final_list
     while begin_number < end_number:

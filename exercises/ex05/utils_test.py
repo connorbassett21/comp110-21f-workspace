@@ -33,7 +33,7 @@ def test_sub_repeat() -> None:
 
 def test_sub_out_of_range() -> None:
     """Tests to see if the function works when first integer is less than zero and second integer is greater than last index."""
-    assert sub([3, 4, 6, 7, 9, 3], -7, 15) == [3, 4, 6, 7, 9]
+    assert sub([3, 4, 6, 7, 9, 3], -7, 15) == [3, 4, 6, 7, 9, 3]
 
 
 def test_concat_positive() -> None:
