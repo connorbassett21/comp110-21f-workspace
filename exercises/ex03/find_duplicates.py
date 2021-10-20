@@ -4,8 +4,8 @@ __author__ = "730397999"
 
 word: str = str(input("Enter a word: "))
 number_of_duplicates: int = 0
-duplicate: bool = False
 i: int = 0
+duplicate: bool = False
 while i < len(word):
     character = word[i]
     j: int = i + 1
